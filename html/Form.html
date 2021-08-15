@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro to Html form </title>
+    <style>
+        #register-form{
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .input-label{
+            margin: 0px;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+        .input-item{
+            width: 100%;
+
+        }
+        #terms-check{
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+    </style>
+
 </head>
-<body>
-    
+<body style="background-color: lightblue;">
+    <h1 style="text-align: center;">Signup</h1>
+   <form id="register-form">
+       <div>
+          <p class="input-label"> Full Name:</p> 
+       <input class="input-item" type="text" name="full-name">
+       </div>
+       <div>
+        <p class="input-label"> Email: </p> 
+    <input class="input-item" type="email" name="email">
+    </div>
+    <div>
+        <p class="input-label"> Password:</p>
+    <input class="input-item" type="password" name="password">
+    </div>
+    <div>
+        <p class="input-label"> Confirm Password: </p>
+    <input class="input-item" type="password" name="confirm-password">
+    </div>
+    <div>
+        <p class="input-label">  Gander: </p>
+        <input type="radio" name="male" >Male</input>
+        <input type="radio" name="female" >Female</input>
+        <input type="radio" name="other" >other</input>
+
+    </div>
+    <div >
+        <p class="input-label">  Security Question: </p>
+        <select class="input-item" name="security-question" >
+            <option value="pet-name">What is your pet name?</option>
+            <option value="friend-name">What is your friend name?</option>
+            <option value="age">What is your age?</option>
+
+        </select>
+    </div>   
+    <div>
+        <textarea class="input-item" name="answer" id="" cols="30" rows="5"></textarea>
+    </div>
+  <input id="terms-check" type="checkbox" name="condition" value="conditions">
+        I agree to terms and condition 
+    </input>
+    </div>
+
+    <br> <br><input type="submit"  value="Register">
+    </input>
+       
+ </form>
 </body>
 </html>
